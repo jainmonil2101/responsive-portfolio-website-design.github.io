@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap");
+
+body {
+  font-family: "Asap", sans-serif;
+  background-color: #ebebeb;
+  background-image: url(images/Logo\ Background.png);
+}
+
+/* Gloabal View aka Desktop View */
+
+.header-container {
+  background-color: rgb(60, 60, 60);
+  position: fixed;
+  width: 100%;
+}
+
+header {
+  max-width: 1024px;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 25px;
+  display: inline-block; 
+  margin: 20px 0 20px 20px;
+}
+
+a:hover {
+  color: rgb(60, 60, 60);
+  background-color: #fff;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+.container {
+  padding-top: 140px;
+  min-height: 500px;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  width: 30%;
+  background-color: dodgerblue;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.hide-desktop {
+  display: none;
+}
+
+.col img {
+  width: 100%;
+  height: auto;
+}
+
+.col p {
+  color: white;
+  padding: 20px 25px;
+  line-height: 1.2rem;
+  font-size: 0.9rem;
+}
+
+.col p::first-line {
+  font-weight: bold;
+}
+
+.mob-wrapper{
+  display: none;
+
+}
+
+/* Tablet View */
+
+@media (max-width: 768px) {
+  .col {
+    width: 45%;
+  }
+  .hide-desktop {
+    display: block;
+  }
+
+ 
+  .header-container {
+    position: relative;
+  }
+
+  .container {
+    padding-top: 40px;
+  }
+
+  .logo {
+    padding: 40px 10px;
+  }
+
+  nav{
+    display: none;
+  }
+
+  nav a {
+    display: block;
+    margin: 0;
+  }
+
+  .mob-wrapper{
+    display: block;
+    padding-right: 30px;
+  }
+
+  .mob-nav{
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+
+  }
+  .navbutton{
+    display: block;
+    margin-left: -70px;
+    background-color: coral;
+    padding: 15px 30px;
+    border-style: none;
+    text-align: center;
+  }
+
+  
+}
+
+/* Mobile View */
+
+@media (max-width: 402px) {
+  .col {
+    width: 100%;
+  }
+  .hide-mobile {
+    display: none;
+  }
+
+  .header-container {
+    position: relative;
+  }
+
+  .container {
+    padding-top: 40px;
+  }
+
+  .logo {
+    padding: 40px 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 0;
+  }
+
+  
+}
